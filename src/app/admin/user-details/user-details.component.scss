@@ -1,0 +1,281 @@
+.container {
+    width: 100vw;
+    min-height: 80vh;
+    height: 100%;
+    margin-top: 45px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+
+
+    .table {
+        margin-top: 75px;
+        width: 45%;
+        height: 45vh;
+        max-width: 45vw;
+        min-width: 155px;
+        overflow: scroll;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(30px);
+        color: rgb(255, 255, 255);
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+        scrollbar-color: transparent;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .user-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+
+            th,
+            td {
+                padding: 12px;
+                text-align: center;
+                border: 1px solid #ccc;
+
+                input {
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                    color: white;
+                    width: 75px;
+                }
+
+                button {
+                    color: rgb(255, 255, 255);
+                    background-color: rgba(0, 0, 0, 0);
+                    border: 2px solid;
+                    border-radius: 50%;
+                    height: 25px;
+                    width: 25px;
+                    text-align: center;
+                }
+            }
+
+            thead {
+                background-color: rgba(200, 0, 0, 1);
+                color: rgb(255, 255, 255);
+            }
+
+            .password {
+                display: flex;
+                flex-direction: row;
+            }
+
+            @media (max-width: 768px) {
+
+                th,
+                td {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .card-bg {
+        margin-top: 75px;
+        width: 45%;
+        height: 45vh;
+        max-width: 35vw;
+        min-width: 120px;
+
+        .card {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(30px);
+            color: rgb(255, 255, 255);
+            border-radius: 8px;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            flex-direction: row;
+
+            .card-header {
+                background-color: rgb(200, 0, 0);
+                width: 100%;
+                height: 10%;
+                padding: 10px 0;
+                margin-top: -20px;
+                border-radius: 8px 8px 0 0;
+
+                h4 {
+                    margin: 5px 10px;
+                    padding: 2px;
+                    text-indent: 25px;
+                }
+            }
+
+            .card-body {
+                h2 {
+                    text-align: center;
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        label {
+                            width: 150px;
+                            margin-right: 10px;
+                        }
+
+                        button {
+                            background-color: rgba(0, 0, 0, 0);
+                            border: none;
+                            color: white;
+                            position: absolute;
+                            right: 40px;
+                        }
+
+                        input,
+                        select,
+                        option {
+                            width: 155px;
+                            background-color: rgba(0, 0, 0, 0);
+                            color: rgb(255, 255, 255);
+                            border: none;
+                            margin-left: 40px;
+                        }
+
+                        .gen {
+                            background-color: black;
+                        }
+
+
+                        input[type=passwordVisibility] {
+                            width: 75%;
+                            background-color: red;
+                        }
+
+                    }
+                }
+
+                .bt {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    .btns {
+                        border-radius: 8px;
+                        margin: 20px;
+                        color: rgb(255, 255, 255);
+                        background-color: rgb(200, 0, 0);
+                        width: 5vw;
+                        height: 5vh;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    @media (max-width: 770px) {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .table {
+            width: 600px;
+            max-width: 1200px;
+            min-width: 60vw;
+
+            .user-table {
+                font-size: 10px;
+                min-width: 90%;
+                height: 25vh;
+                // Adjust font size for smaller screens
+            }
+        }
+
+        .card-bg {
+            width: 600px;
+            max-width: 85vw;
+            min-width: 65vw;
+            height: auto;
+
+            .li {
+                background-color: #ccc;
+                width: 90%;
+                margin-left: -2%;
+            }
+
+            .btns {
+                min-width: 150px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .table {
+            width: 380px;
+            min-width: 70vw;
+            max-width: 80vw;
+
+            .user-table {
+                max-width: 80%
+            }
+        }
+    }
+
+    @media screen and (max-width: 435px) {
+        .table {
+            width: 180px;
+            min-width: 80vw;
+            max-width: 92vw;
+        }
+
+        .user-table {
+            max-width: 80%;
+        }
+
+
+        .card-bg {
+            width: 350px;
+            max-width: 85vw;
+            min-width: 65vw;
+            height: auto;
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            li {
+                font-size: 0.7rem;
+                width: 90%;
+                margin-left: -2%;
+
+                label {
+                    font-size: 0.6rem;
+                }
+
+                input,
+                select,
+                option {
+                    font-size: 0.6rem;
+                }
+            }
+
+            .btns {
+                min-width: 100px;
+            }
+        }
+
+    }
+}

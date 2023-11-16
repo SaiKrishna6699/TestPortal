@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "trinethra-portal": {
+      "hosting": {
+        "Trinethra-Portal": [
+          "trinethra-portal"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "trinethra-portal"
+  }
+}

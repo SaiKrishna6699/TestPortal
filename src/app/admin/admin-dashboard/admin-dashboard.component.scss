@@ -1,0 +1,133 @@
+$primary-bg-image: url('../../../assets/HomePageBG.jpg');
+$primary-bg-color: rgba(255, 255, 255, 0.8);
+$secondary-bg-color: #060606;
+$primary-text-color: #ffffff;
+$primary-hover-color: rgb(225, 0, 0);
+
+.container {
+    background-image: $primary-bg-image;
+    color: $secondary-bg-color;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+
+    margin: 0 20px;
+
+    .results {
+        max-width: 90vw;
+        min-width: 155px;
+        overflow: scroll;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(30px);
+        color: rgb(255, 255, 255);
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+        scrollbar-color: transparent;
+
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .scores-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            overflow-x: scroll;
+
+            th,
+            td {
+                padding: 12px;
+                text-align: center;
+                border: 1px solid #ccc;
+            }
+
+            th {
+                background-color: rgba(255, 0, 0, 0.2);
+                color: rgb(255, 255, 255);
+            }
+
+            button {
+                color: rgb(255, 255, 255);
+                background-color: rgb(255, 1, 1);
+                border: 0 solid;
+                border-radius: 10px;
+                height: 25px;
+                width: 100px;
+                text-align: center;
+
+                &:hover {
+                    background-color: darken(rgb(255, 0, 0), 10%);
+                }
+            }
+
+            @media (max-width: 768px) {
+
+                th,
+                td {
+                    font-size: 12px;
+                    padding: 8px; // Adjust padding for smaller screens
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .score,
+            .correct-answers,
+            .incorrect-answers,
+            .questions-attempted,
+            .result,
+            .timestamp {
+                font-weight: bold;
+            }
+
+            .score-header,
+            .correct-answers-header,
+            .incorrect-answers-header,
+            .questions-attempted-header,
+            .result-header,
+            .timestamp-header {
+                font-weight: bold;
+                background-color: rgba(255, 0, 0, 0.2);
+                color: rgb(255, 255, 255);
+            }
+
+            .score,
+            .correct-answers,
+            .incorrect-answers,
+            .questions-attempted,
+            .result,
+            .timestamp {
+                color: rgb(255, 255, 255);
+            }
+
+            .timestamp {
+                font-style: italic;
+            }
+        }
+
+        @media screen and (max-width: 770px) {
+            margin: 5px auto;
+            position: absolute;
+            top: 135px;
+            overflow-x: auto;
+
+
+            .scores-table {
+                max-width: 90vw;
+            }
+        }
+    }
+}

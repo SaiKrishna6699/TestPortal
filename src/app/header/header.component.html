@@ -1,0 +1,29 @@
+<nav class="nav-bar">
+    <a class="nav-brand">
+        &nbsp; &nbsp; &nbsp; Trinethra Portal
+    </a>
+    <a class="toggle-menu" (click)="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </a>
+    <ul class="nav-list" *ngIf="!isMenuActive" [ngClass]="{'link-style': isLoggedin && !isAdmin}">
+        <li class="nav-items" *ngIf="!isAdmin"><a class="nav-links" routerLink="/home">Home</a></li>
+        <ng-container *ngIf="!isLoggedin; else loggedIn">
+            <li class="nav-items"><a class="nav-links" routerLink="/login">Login</a></li>
+            <li class="nav-items"><a class="nav-links" routerLink="/register">Register</a></li>
+        </ng-container>
+        <ng-template #loggedIn>
+            <ng-container *ngIf="!isAdmin; else adminLoggedIn">
+                <li class="nav-items"><a class="nav-links" routerLink="user/dashboard">Dashboard</a></li>
+                <li class="nav-items"><a class="nav-links" routerLink="user/results">Results</a></li>
+                <li class="nav-items"><a class="nav-links">{{ username }}</a></li>
+                <li class="nav-items"><a class="nav-links" (click)="logout()">Logout</a></li>
+            </ng-container>
+
+        </ng-template>
+        <ng-template #adminLoggedIn>
+            <li class="nav-items"><a class="nav-links" routerLink="admin/adminhome">Admin Dashboard</a></li>
+            <li class="nav-items"><a class="nav-links">{{ username }}</a></li>
+            <li class="nav-items"><a class="nav-links" (click)="logout()">Logout</a></li>
+        </ng-template>
+    </ul>
+</nav>

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="content-left">
+        <h2>TRINETHRA</h2>
+        <p>Take a step towards success with our comprehensive test solutions.</p>
+    </div>
+    <div class="content-right">
+        <h2>Login</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="username">Email</label>
+                <input type="text" id="username" formControlName="email" autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" formControlName="password" autocomplete="off" />
+            </div>
+            <button type="submit" [disabled]="!loginForm.valid">Login</button>
+            <br>
+            <p>Not yet registered? <a routerLink="/register">Click Here</a></p>
+            <p>Forgot Password?<a routerLink="/forgotpassword">Click Here</a></p>
+            <p>Login as an admin?<a routerLink="/admin-login">Click Here</a></p>
+        </form>
+    </div>
+</div>

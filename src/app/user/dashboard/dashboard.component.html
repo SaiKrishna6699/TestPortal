@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1>All set to take the test.</h1>
+        <p>Before taking a test, please read and agree to the following rules and regulations:</p>
+        <ul>
+            <li>Rule 1: Correct Questions will give you 10 marks.</li>
+            <li>Rule 2: Incorrect Questions will give you -10 marks.</li>
+            <li>Rule 3: Each Question will have 60 secs of time.</li>
+            <li>Rule 4: Refreshing the page will reset the quiz.</li>
+            <li>Rule 5: You need to score 100 to pass the test.</li>
+            <li>Rule 6: 16 Incorrect Answers will automatically elimate you from the test</li>
+            <li>Rule 7: Not completing the test within the time frame will eliminate you from the test.</li>
+        </ul>
+        <label>
+            <input type="checkbox" [(ngModel)]="agreeToRules"> I agree to the rules and regulations.
+        </label>
+        <button class="btn btn-primary" [disabled]="!agreeToRules" (click)="navigateToTestPortal()">Take Test</button>
+
+    </div>
+</div>

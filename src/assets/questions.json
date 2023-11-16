@@ -1,0 +1,786 @@
+{
+    "questions": [
+        {
+            "questionText": "What does a red traffic light indicate?",
+            "options": [
+                {
+                    "text": "Stop",
+                    "correct": true
+                },
+                {
+                    "text": "Go"
+                },
+                {
+                    "text": "Yield"
+                },
+                {
+                    "text": "Slow down"
+                }
+            ],
+            "explanation": "A red traffic light indicates 'Stop.'"
+        },
+        {
+            "questionText": "Which color is used to indicate a pedestrian crossing?",
+            "options": [
+                {
+                    "text": "Yellow"
+                },
+                {
+                    "text": "White",
+                    "correct": true
+                },
+                {
+                    "text": "Green"
+                },
+                {
+                    "text": "Black"
+                }
+            ],
+            "explanation": "White is used to indicate a pedestrian crossing."
+        },
+        {
+            "questionText": "What does a yellow traffic light indicate?",
+            "options": [
+                {
+                    "text": "Slow down",
+                    "correct": true
+                },
+                {
+                    "text": "Go"
+                },
+                {
+                    "text": "Stop"
+                },
+                {
+                    "text": "Yield"
+                }
+            ],
+            "explanation": "A yellow traffic light indicates 'Slow down.'"
+        },
+        {
+            "questionText": "What is the maximum speed limit for passenger cars on national highways in India?",
+            "options": [
+                {
+                    "text": "80 km/h"
+                },
+                {
+                    "text": "100 km/h"
+                },
+                {
+                    "text": "120 km/h"
+                },
+                {
+                    "text": "60 km/h",
+                    "correct": true
+                }
+            ],
+            "explanation": "The maximum speed limit for passenger cars on national highways in India is 60 km/h."
+        },
+        {
+            "questionText": "When should you use your horn in a residential area?",
+            "options": [
+                {
+                    "text": "Only in emergencies",
+                    "correct": true
+                },
+                {
+                    "text": "To greet a friend"
+                },
+                {
+                    "text": "When approaching a blind spot"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+            "explanation": "You should use your horn only in emergencies in a residential area."
+        },
+        {
+            "questionText": "What does a green traffic light indicate?",
+            "options": [
+                {
+                    "text": "Stop"
+                },
+                {
+                    "text": "Go",
+                    "correct": true
+                },
+                {
+                    "text": "Yield"
+                },
+                {
+                    "text": "Slow down"
+                }
+            ],
+            "explanation": "A green traffic light indicates 'Go.'"
+        },
+        {
+            "questionText": "What does a white broken line on the road indicate?",
+            "options": [
+                {
+                    "text": "Overtaking allowed",
+                    "correct": true
+                },
+                {
+                    "text": "No overtaking"
+                },
+                {
+                    "text": "Speed limit zone"
+                },
+                {
+                    "text": "Parking zone"
+                }
+            ],
+            "explanation": "A white broken line on the road indicates overtaking is allowed."
+        },
+        {
+            "questionText": "When should you use your hazard lights?",
+            "options": [
+                {
+                    "text": "When parked on the side of the road",
+                    "correct": true
+                },
+                {
+                    "text": "During heavy rain or fog",
+                    "correct": true
+                },
+                {
+                    "text": "While overtaking"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+            "explanation": "You should use hazard lights when parked on the side of the road and during heavy rain or fog."
+        },
+        {
+            "questionText": "What is the penalty for driving without a valid license?",
+            "options": [
+                {
+                    "text": "Fine",
+                    "correct": true
+                },
+                {
+                    "text": "Jail term",
+                    "correct": true
+                },
+                {
+                    "text": "Both A and B"
+                },
+                {
+                    "text": "Warning"
+                }
+            ],
+            "explanation": "The penalty for driving without a valid license is a fine and possible jail term."
+        },
+        {
+            "questionText": "What is the minimum age for obtaining a learner's license for a two-wheeler in India?",
+            "options": [
+                {
+                    "text": "16 years"
+                },
+                {
+                    "text": "18 years",
+                    "correct": true
+                },
+                {
+                    "text": "20 years"
+                },
+                {
+                    "text": "21 years"
+                }
+            ],
+            "explanation": "The minimum age for obtaining a learner's license for a two-wheeler in India is 18 years."
+        },
+        {
+            "questionText": "Which sign indicates a U-turn is allowed?",
+            "options": [
+                {
+                    "text": "↘"
+                },
+                {
+                    "text": "↗"
+                },
+                {
+                    "text": "↙"
+                },
+                {
+                    "text": "↖",
+                    "correct": true
+                }
+            ],
+            "explanation": "The sign ↖ indicates a U-turn is allowed."
+        },
+        {
+            "questionText": "What does a yield sign indicate?",
+            "options": [
+                {
+                    "text": "Slow down and be prepared to stop",
+                    "correct": true
+                },
+                {
+                    "text": "Go straight without stopping"
+                },
+                {
+                    "text": "Merge with traffic"
+                },
+                {
+                    "text": "Stop and wait for green light"
+                }
+            ],
+            "explanation": "A yield sign indicates you should slow down and be prepared to stop."
+        },
+        {
+            "questionText": "What does a 'No Parking' sign look like?",
+            "options": [
+                {
+                    "text": "A red circle with a line through it over a P",
+                    "correct": true
+                },
+                {
+                    "text": "A green circle with a P"
+                },
+                {
+                    "text": "A red triangle with an exclamation mark"
+                },
+                {
+                    "text": "A white square with a black P"
+                }
+            ],
+            "explanation": "A 'No Parking' sign looks like a red circle with a line through it over a P."
+        },
+        {
+            "questionText": "What does a blue sign with an 'H' symbol indicate?",
+            "options": [
+                {
+                    "text": "Hospital",
+                    "correct": true
+                },
+                {
+                    "text": "Hotel"
+                },
+                {
+                    "text": "Highway"
+                },
+                {
+                    "text": "Home"
+                }
+            ],
+            "explanation": "A blue sign with an 'H' symbol indicates a Hospital."
+        },
+        {
+            "questionText": "What is the legal blood alcohol concentration (BAC) limit for drivers in India?",
+            "options": [
+                {
+                    "text": "0.08%"
+                },
+                {
+                    "text": "0.03%"
+                },
+                {
+                    "text": "0.00%"
+                },
+                {
+                    "text": "0.10%",
+                    "correct": true
+                }
+            ],
+            "explanation": "The legal blood alcohol concentration (BAC) limit for drivers in India is 0.03%."
+        },
+        {
+            "questionText": "Which sign indicates a pedestrian crossing ahead?",
+            "options": [
+                {
+                    "text": "🚷"
+                },
+                {
+                    "text": "🚸"
+                },
+                {
+                    "text": "🚶",
+                    "correct": true
+                },
+                {
+                    "text": "🛑"
+                }
+            ],
+            "explanation": "The sign 🚶 indicates a pedestrian crossing ahead."
+        },
+        {
+            "questionText": "When should you use your headlights?",
+            "options": [
+                {
+                    "text": "At night",
+                    "correct": true
+                },
+                {
+                    "text": "During heavy rain or fog",
+                    "correct": true
+                },
+                {
+                    "text": "Both A and B"
+                },
+                {
+                    "text": "Only in urban areas"
+                }
+            ],
+            "explanation": "You should use your headlights at night and during heavy rain or fog."
+        },
+        {
+            "questionText": "What should you do if you miss your exit on a highway?",
+            "options": [
+                {
+                    "text": "Take the next exit and turn around",
+                    "correct": true
+                },
+                {
+                    "text": "Reverse on the highway"
+                },
+                {
+                    "text": "Stop and wait for assistance"
+                },
+                {
+                    "text": "Drive in the opposite direction"
+                }
+            ],
+            "explanation": "If you miss your exit on a highway, take the next exit and turn around."
+        },
+        {
+            "questionText": "What does a 'No Entry' sign indicate?",
+            "options": [
+                {
+                    "text": "Do not enter this road",
+                    "correct": true
+                },
+                {
+                    "text": "One-way street"
+                },
+                {
+                    "text": "Stop and give way"
+                },
+                {
+                    "text": "Yield"
+                }
+            ],
+            "explanation": "A 'No Entry' sign indicates that you should not enter this road."
+        },
+        {
+            "questionText": "What is the penalty for not wearing a seatbelt while driving?",
+            "options": [
+                {
+                    "text": "Fine",
+                    "correct": true
+                },
+                {
+                    "text": "Warning"
+                },
+                {
+                    "text": "License suspension"
+                },
+                {
+                    "text": "Jail term"
+                }
+            ],
+            "explanation": "The penalty for not wearing a seatbelt while driving is a fine."
+        },
+        {
+            "questionText": "What is the maximum permissible level of tinted glass on car windows in India?",
+            "options": [
+                {
+                    "text": "70%"
+                },
+                {
+                    "text": "50%"
+                },
+                {
+                    "text": "30%"
+                },
+                {
+                    "text": "90%",
+                    "correct": true
+                }
+            ],
+            "explanation": "The maximum permissible level of tinted glass on car windows in India is 90%."
+        },
+        {
+            "questionText": "What does a red triangle with an exclamation mark indicate?",
+            "options": [
+                {
+                    "text": "Danger",
+                    "correct": true
+                },
+                {
+                    "text": "Yield"
+                },
+                {
+                    "text": "No entry"
+                },
+                {
+                    "text": "Stop"
+                }
+            ],
+            "explanation": "A red triangle with an exclamation mark indicates danger."
+        },
+        {
+            "questionText": "What does a 'No Horn' sign indicate?",
+            "options": [
+                {
+                    "text": "Horns are prohibited",
+                    "correct": true
+                },
+                {
+                    "text": "Honk to alert others"
+                },
+                {
+                    "text": "Use horn freely"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+            "explanation": "A 'No Horn' sign indicates that horns are prohibited."
+        },
+        {
+            "questionText": "What is the penalty for using a mobile phone while driving?",
+            "options": [
+                {
+                    "text": "Fine",
+                    "correct": true
+                },
+                {
+                    "text": "Warning"
+                },
+                {
+                    "text": "License suspension"
+                },
+                {
+                    "text": "Jail term"
+                }
+            ],
+            "explanation": "The penalty for using a mobile phone while driving is a fine."
+        },
+        {
+            "questionText": "What is the meaning of a solid white line on the road?",
+            "options": [
+                {
+                    "text": "No overtaking",
+                    "correct": true
+                },
+                {
+                    "text": "Overtaking allowed"
+                },
+                {
+                    "text": "Speed limit zone"
+                },
+                {
+                    "text": "Parking zone"
+                }
+            ],
+            "explanation": "A solid white line on the road means no overtaking is allowed."
+        },
+        {
+            "questionText": "What does a red circle with a line through it over a mobile phone indicate?",
+            "options": [
+                {
+                    "text": "No use of mobile phones",
+                    "correct": true
+                },
+                {
+                    "text": "Using mobile phones allowed"
+                },
+                {
+                    "text": "Speed limit zone for mobile users"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+            "explanation": "A red circle with a line through it over a mobile phone indicates that using mobile phones is not allowed."
+        },
+        {
+            "questionText": "What does a 'Zebra Crossing' indicate?",
+            "options": [
+                {
+                    "text": "Pedestrian crossing area",
+                    "correct": true
+                },
+                {
+                    "text": "No entry for pedestrians"
+                },
+                {
+                    "text": "Crosswalk for animals"
+                },
+                {
+                    "text": "No stopping zone"
+                }
+            ],
+            "explanation": "A 'Zebra Crossing' indicates a pedestrian crossing area."
+        },
+        {
+            "questionText": "What is the penalty for jumping a red light?",
+            "options": [
+                {
+                    "text": "Fine",
+                    "correct": true
+                },
+                {
+                    "text": "Warning"
+                },
+                {
+                    "text": "License suspension"
+                },
+                {
+                    "text": "Jail term"
+                }
+            ],
+            "explanation": "The penalty for jumping a red light is a fine."
+        },
+        {
+            "questionText": "What does a 'No Overtaking' sign look like?",
+            "options": [
+                {
+                    "text": "A white circle with a red border",
+                    "correct": true
+                },
+                {
+                    "text": "A red triangle with an exclamation mark"
+                },
+                {
+                    "text": "A blue circle with a white arrow"
+                },
+                {
+                    "text": "A green circle with a P"
+                }
+            ],
+            "explanation": "A 'No Overtaking' sign is a white circle with a red border."
+        },
+        {
+            "questionText": "What is the penalty for not stopping for a school bus with flashing red lights?",
+            "options": [
+                {
+                    "text": "Fine and possible suspension of license",
+                    "correct": true
+                },
+                {
+                    "text": "Warning"
+                },
+                {
+                    "text": "Jail term"
+                },
+                {
+                    "text": "Community service"
+                }
+            ],
+            "explanation": "The penalty for not stopping for a school bus with flashing red lights is a fine and possible suspension of the license."
+        },
+        {
+            "questionText": "What is the penalty for not wearing a seatbelt while driving?",
+            "options": [
+                {
+                    "text": "Fine",
+                    "correct": true
+                },
+                {
+                    "text": "Warning"
+                },
+                {
+                    "text": "License suspension"
+                },
+                {
+                    "text": "Jail term"
+                }
+            ],
+            "explanation": "The penalty for not wearing a seatbelt while driving is a fine."
+        },
+        {
+            "questionText": "What is the maximum permissible level of tinted glass on car windows in India?",
+            "options": [
+                {
+                    "text": "70%"
+                },
+                {
+                    "text": "50%"
+                },
+                {
+                    "text": "30%"
+                },
+                {
+                    "text": "90%",
+                    "correct": true
+                }
+            ],
+            "explanation": "The maximum permissible level of tinted glass on car windows in India is 90%."
+        },
+        {
+            "questionText": "What does a red triangle with an exclamation mark indicate?",
+            "options": [
+                {
+                    "text": "Danger",
+                    "correct": true
+                },
+                {
+                    "text": "Yield"
+                },
+                {
+                    "text": "No entry"
+                },
+                {
+                    "text": "Stop"
+                }
+            ],
+            "explanation": "A red triangle with an exclamation mark indicates danger."
+        },
+        {
+            "questionText": "What does a 'No Horn' sign indicate?",
+            "options": [
+                {
+                    "text": "Horns are prohibited",
+                    "correct": true
+                },
+                {
+                    "text": "Honk to alert others"
+                },
+                {
+                    "text": "Use horn freely"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+            "explanation": "A 'No Horn' sign indicates that horns are prohibited."
+        },
+        {
+            "questionText": "What is the penalty for using a mobile phone while driving?",
+            "options": [
+                {
+                    "text": "Fine",
+                    "correct": true
+                },
+                {
+                    "text": "Warning"
+                },
+                {
+                    "text": "License suspension"
+                },
+                {
+                    "text": "Jail term"
+                }
+            ],
+            "explanation": "The penalty for using a mobile phone while driving is a fine."
+        },
+        {
+            "questionText": "What is the meaning of a solid white line on the road?",
+            "options": [
+                {
+                    "text": "No overtaking",
+                    "correct": true
+                },
+                {
+                    "text": "Overtaking allowed"
+                },
+                {
+                    "text": "Speed limit zone"
+                },
+                {
+                    "text": "Parking zone"
+                }
+            ],
+            "explanation": "A solid white line on the road means no overtaking is allowed."
+        },
+        {
+            "questionText": "What does a red circle with a line through it over a mobile phone indicate?",
+            "options": [
+                {
+                    "text": "No use of mobile phones",
+                    "correct": true
+                },
+                {
+                    "text": "Using mobile phones allowed"
+                },
+                {
+                    "text": "Speed limit zone for mobile users"
+                },
+                {
+                    "text": "None of the above"
+                }
+            ],
+            "explanation": "A red circle with a line through it over a mobile phone indicates that using mobile phones is not allowed."
+        },
+        {
+            "questionText": "What does a 'Zebra Crossing' indicate?",
+            "options": [
+                {
+                    "text": "Pedestrian crossing area",
+                    "correct": true
+                },
+                {
+                    "text": "No entry for pedestrians"
+                },
+                {
+                    "text": "Crosswalk for animals"
+                },
+                {
+                    "text": "No stopping zone"
+                }
+            ],
+            "explanation": "A 'Zebra Crossing' indicates a pedestrian crossing area."
+        },
+        {
+            "questionText": "What is the penalty for jumping a red light?",
+            "options": [
+                {
+                    "text": "Fine",
+                    "correct": true
+                },
+                {
+                    "text": "Warning"
+                },
+                {
+                    "text": "License suspension"
+                },
+                {
+                    "text": "Jail term"
+                }
+            ],
+            "explanation": "The penalty for jumping a red light is a fine."
+        },
+        {
+            "questionText": "What does a 'No Overtaking' sign look like?",
+            "options": [
+                {
+                    "text": "A white circle with a red border",
+                    "correct": true
+                },
+                {
+                    "text": "A red triangle with an exclamation mark"
+                },
+                {
+                    "text": "A blue circle with a white arrow"
+                },
+                {
+                    "text": "A green circle with a P"
+                }
+            ],
+            "explanation": "A 'No Overtaking' sign is a white circle with a red border."
+        },
+        {
+            "questionText": "What is the penalty for not stopping for a school bus with flashing red lights?",
+            "options": [
+                {
+                    "text": "Fine and possible suspension of license",
+                    "correct": true
+                },
+                {
+                    "text": "Warning"
+                },
+                {
+                    "text": "Jail term"
+                },
+                {
+                    "text": "Community service"
+                }
+            ],
+            "explanation": "The penalty for not stopping for a school bus with flashing red lights is a fine and possible suspension of the license."
+        }
+    ]
+}

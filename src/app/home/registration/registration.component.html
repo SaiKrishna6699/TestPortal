@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="content-left">
+        <h2>TRINETHRA</h2>
+        <p>Take a step towards success with our comprehensive test solutions.</p>
+    </div>
+    <div class="content-right">
+        <h2>Registration</h2>
+        <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" formControlName="name" autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" formControlName="email" autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" formControlName="password" autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" formControlName="confirmPassword" autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" formControlName="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="text" id="mobileNumber" formControlName="mobileNumber" autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" formControlName="termsAndConditions" />
+                    Agree to Terms and Conditions
+                </label>
+            </div>
+            <button type="submit" [disabled]="!registrationForm.valid">Register</button>
+            <p>Already Registered <a routerLink="/login">Click Here</a></p>
+        </form>
+
+    </div>
+</div>

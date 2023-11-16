@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="results">
+        <p>Results: </p>
+        <table class="scores-table">
+            <thead>
+                <tr>
+                    <th class="score-header">Score</th>
+                    <th class="correct-answers-header">Correct Answers</th>
+                    <th class="incorrect-answers-header">Incorrect Answers</th>
+                    <th class="questions-attempted-header">Questions Attempted</th>
+                    <th class="result-header">Result</th>
+                    <th class="timestamp-header">Time Stamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let score of results">
+                  <td class="score">{{ score.points }}</td>
+                  <td class="correct-answers">{{ score.correctAnswers }}</td>
+                  <td class="incorrect-answers">{{ score.wrongAnswers }}</td>
+                  <td class="questions-attempted">{{ score.questionAttempted }}</td>
+                  <td class="result">{{ score.results }}</td>
+                  <td class="timestamp">{{ score.time }}</td>
+                </tr>
+              </tbody>
+              
+        </table>
+    </div>
+</div>

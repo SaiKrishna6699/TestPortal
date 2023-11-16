@@ -1,0 +1,40 @@
+.container {
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .dialog-body {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        /* Adjusted to column layout */
+        justify-content: center;
+        align-items: center;
+
+        p {
+            width: 100%;
+            text-align: center;
+            margin: 5px 0;
+            /* Added some margin for better spacing */
+            padding: 10px;
+            /* Added padding for better visibility */
+        }
+    }
+
+    .dialog-footer {
+        button {
+            color: rgb(255,255,255);
+            background-color: rgb(255, 0, 0);
+            width: 5vw;
+            height: 5vh;
+            border: 0;
+            border-radius: 8px;
+        }
+    }
+}

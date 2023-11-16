@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="container-fluid">
+        <div class="header-section">
+            <div class="card-header">
+                <div class="image">
+                    <h6>Traffic Rules and Regulations</h6>
+                </div>
+                <div class="timer">
+                    <h6>Timer: {{displayTime}} <fa-icon [icon]="clock"></fa-icon> </h6>
+                </div>
+                <div class="user">
+                    <h6>Welcome! {{username}}</h6>
+                </div>
+            </div>
+            <div class="test-header">
+                <div class="score">
+                    <h6>{{points}} Points</h6>
+                </div>
+                <div class="questions-remain">
+                    <h6>Question {{currentIndex}} of {{questionList.length}}</h6>
+                </div>
+                <div class="counter">
+                    <h6>{{counter}} secs <fa-icon [icon]="clock"></fa-icon></h6>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" [ngStyle]="{'width': progress +'%'}" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="test-body">
+                <div class="questions">
+                    <div class="card">
+                        <h3>{{questionList[currentQuestionNumber]?.questionText}}</h3>
+                    </div>
+                </div>
+                <div class="options">
+                    <ol *ngFor="let option of questionList[currentQuestionNumber]?.options">
+                        <li (click)="answer(currentQuestionNumber+1, option)">
+                            <div class="card">
+                                {{option.text}}
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="buttons">
+                    <div class="btn"><button [disabled]="currentQuestionNumber==0" class="button"
+                            (click)="previousQuestion()"><fa-icon class="fa fa-2x" [icon]="left"></fa-icon></button>
+                    </div>
+                    <div class="btn"> <button class="button reset" (click)="resetQuiz()">reset</button></div>
+                    <div class="btn"> <button class="button" (click)="nextQuestion()"><fa-icon class="fa fa-2x"
+                                [icon]="right"></fa-icon></button></div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+<div class="container">
+    <div class="table">
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <td>S.No</td>
+                    <td>Name</td>
+                    <td>Email</td>
+                    <!-- <td>Password</td>
+                    <td>Mobile Number</td>
+                    <td>Gender</td> -->
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <!-- <td class="password">
+                        <input [type]="passwordVisibility[i] ? 'text' : 'password'" [(ngModel)]="users[i].password" />
+                        <button (click)="togglePasswordVisibility(i)"><i class="fa-solid fa-eye"></i></button>
+                    </td>
+                    <td>{{ user.mobileNumber }}</td>
+                    <td>{{ user.gender }}</td> -->
+                    <td>
+                        <button (click)="selectUser(user)"><i class="fa-solid fa-arrow-right"></i></button>
+                        <!-- <button (click)="deleteUser(user)">Delete</button> -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-bg">
+        <div class="card" *ngIf="pressedUser">
+            <div class="card-header">
+                <h4>User Details</h4>
+            </div>
+            <div class="card-body">
+                <h2>{{selectedUser.name}}</h2>
+                <form [formGroup]="userForm">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" formControlName="name" [readonly]="!isEditMode">
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" formControlName="email" [readonly]="!isEditMode">
+                        </li>
+                        <li>
+                            <label for="password">Password:</label>
+                            <input [type]="passwordVisibility ? 'password' : 'text'" id="password"
+                                formControlName="password" [readonly]="!isEditMode" />
+                            <button (click)="togglePasswordVisibility()" [disabled]="!isEditMode">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <label for="confirmPassword">Confirm Password:</label>
+                            <input [type]="passwordVisibility ? 'password' : 'text'" id="confirmPassword"
+                                formControlName="confirmPassword" [readonly]="!isEditMode" />
+                            <button (click)="togglePasswordVisibility()" [disabled]="!isEditMode">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <label for="mobileNumber">Mobile:</label>
+                            <input type="text" id="mobileNumber" formControlName="mobileNumber"
+                                [readonly]="!isEditMode">
+                        </li>
+                        <li>
+                            <label for="gender">Gender:</label>
+                            <select id="gender" formControlName="gender" [disabled]="!isEditMode">
+                                <option class="gen" value="male">male</option>
+                                <option class="gen" value="female">female</option>
+                                <option class="gen" value="other">other</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="bt">
+                        <button class="btns" (click)="updateUser(userForm.value)">{{ updateButtonText }}</button>
+                        <button class="btns" (click)="deleteUser(userForm)">{{deleteButtonText}}</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
